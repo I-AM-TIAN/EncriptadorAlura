@@ -288,32 +288,37 @@ footer{
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
+
+  .contenedor__principal{
+    width: 100%;
+  }
+
   .contenedor__principal__logo{
     top: 24px;
     left: -16px;
   }
 
   .contenedor__principal__input{
-    left: 25px;
+    left: 50px;
     width: 300px;
   }
 
   .contenedor__principal__hijo{
-    margin-left: 5%;
+    margin-left: 15%;
     margin-top: 604px;
     width: 300px;
     height: 300px;
   }
 
   .contenedor__principal__advertencia{
-    left: 25px;
+    left: 50px;
     top: 380px;
   }
 
   .contenedor__principal__botones{
     flex-direction: column;
-    left: 25px;
+    left: 50px;
     top: 420px;
   }
 
@@ -323,7 +328,7 @@ footer{
 
   .contenedor__principal__vacio{
     margin-top: -170px;
-    margin-left: 0%;
+    margin-left: 10%;
   }
 
   .contenedor__principal__vacio__texto{
@@ -336,13 +341,14 @@ footer{
   }
 
   .contenedor__principal__output{
+    margin-left: 15%;
     margin-top: -300px;
     width: 280px;
     height: 180px;
   }
 
   .boton_copiar{
-    margin-left: 30px;
+    margin-left: 70px;
     margin-top: 20px;
     width: 280px;
   }
