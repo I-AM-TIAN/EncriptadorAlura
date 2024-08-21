@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-col">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <h1>BIENVENIDO A MI ENCRIPTADOR</h1>
+    <div class="contenedor__principal">
+      <div class="contenedor__principal__logo">
+        <img class="contenedor__principal__logo__img" alt="" src="Vector.svg" />
+      </div>
+      <div class="contenedor__principal__hijo"></div>
+      <textarea
+        class="contenedor__principal__input"
+        placeholder="Ingrese el texto aquí"
+        id="input"
+      ></textarea>
+      <div class="contenedor__principal__botones">
+        <button
+          class="contenedor__principal__botones__boton1"
+          id="encriptador"
+          onclick="encriptar()"
+        >
+          Encriptar
+        </button>
+        <button class="contenedor__principal__botones__boton2"
+        onclick="desencriptar()">
+          Desencriptar
+        </button>
+      </div>
+      <div class="contenedor__principal__advertencia">
+        <img
+          class="contenedor__principal__advertencia__icono"
+          src="icono.png"
+          alt=""
+        />
+        <div class="contenedor__principal__advertencia__texto">
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+      </div>
+      <div id="contenido_borrable">
+        <img class="contenedor__principal__muñeco" src="Muñeco.png" alt="" />
+        <div class="contenedor__principal__vacio">
+          <b class="contenedor__principal__vacio__texto"
+            >Ningún mensaje fue encontrado</b
+          >
+          <div class="contenedor__principal__vacio__alerta">
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+        </div>
+      </div>
+      <textarea
+        id="output"
+        class="contenedor__principal__output"
+        placeholder="Aquí se muestra la respuesta"
+        disabled
+      ></textarea>
+      <button class="boton_copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+      <h4>DESARROLLADO POR SEBASTIÁN ÁLVAREZ</h4>
+    </footer>
+  </body>
+</html>

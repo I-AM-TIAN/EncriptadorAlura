@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+  color: white;
+}
+
+h1{
+  color: #0A3871;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.contenedor__principal {
+  width: 100%;
+  position: relative;
+  background-color: #f3f5fc;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 32px;
+  color: #0a3871;
+  font-family: Inter;
+}
+
+.contenedor__principal__logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 120px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.contenedor__principal__logo__img {
+  width: 120px;
+  position: relative;
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.contenedor__principal__hijo {
+  position: absolute;
+  top: 40px;
+  left: 1000px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  background-color: #fff;
+  width: 400px;
+  height: 944px;
+}
+
+.contenedor__principal__input {
+  position: absolute;
+  top: 168px;
+  left: 240px;
+  line-height: 150%;
+  width: 577px;
+  height: 200px;
+  resize: none;
+  padding: 16px;
+  font-size: 16px;
+  color: #0a3871;
+  background-color: #fff;
+  border: 2px solid #d8dfe8;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.contenedor__principal__botones {
+  position: absolute;
+  top: 885px;
+  left: 240px;
+  width: 680px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.contenedor__principal__botones__boton1 {
+  width: 328px;
+  border-radius: 24px;
+  background-color: #0a3871;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.contenedor__principal__botones__boton2 {
+  width: 328px;
+  border-radius: 24px;
+  background-color: #d8dfe8;
+  border: 1px solid #0a3871;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  cursor: pointer;
+  color: #0A3871;
+}
+
+.contenedor__principal__advertencia {
+  position: absolute;
+  top: 851px;
+  left: 240px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: #495057;
+}
+
+.contenedor__principal__advertencia__icono {
+  width: 16px;
+  position: relative;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.contenedor__principal__advertencia__texto {
+  position: relative;
+  line-height: 150%;
+  opacity: 0.8;
+}
+
+.contenedor__principal__muñeco {
+  position: absolute;
+  top: 283px;
+  left: 1032px;
+  width: 336px;
+  height: 304px;
+  overflow: hidden;
+}
+
+.contenedor__principal__vacio {
+  position: absolute;
+  top: 619px;
+  left: 1032px;
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 24px;
+  color: #343a40;
+}
+
+.contenedor__principal__vacio__texto {
+  align-self: stretch;
+  position: relative;
+  line-height: 120%;
+}
+
+.contenedor__principal__vacio__alerta {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 150%;
+  color: #495057;
+}
+
+.contenedor__principal__output{
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 1000px;
+  line-height: 150%;
+  width: 400px;
+  height: 600px;
+  resize: none;
+  padding: 16px;
+  font-size: 16px;
+  color: #0a3871;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border-color: #fff;
+}
+
+.boton_copiar{
+  border-radius: 24px;
+  background-color: #d8dfe8;
+  border: 1px solid #0a3871;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  cursor: pointer;
+  color: #0A3871;
+  position: absolute;
+  top: 885px;
+  left: 1050px;
+  width: 328px;
+  display: none;
+}
+
+footer{
+  height: 80px;
+  padding-top: 40px;
+  background-color: #0A3871;
+  text-align: center;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .contenedor__principal{
+    height: 100vh;
+  }
+
+  .contenedor__principal__hijo{
+    position: static;
+    width: 688px;
+    height: 343px;
+    margin-top: 800px;
+    margin-left: 40px;
+  }
+
+  .contenedor__principal__muñeco{
+    display: none;
+  }
+
+  .contenedor__principal__input {
+    left: 40px;
+    width: 680px;
+  }
+
+  .contenedor__principal__botones{
+    top: 670px;
+    left: 40px;
+  }
+
+  .contenedor__principal__advertencia{
+    left: 56px;
+    top: 636px;
+  }
+
+  .contenedor__principal__vacio{
+    position: static;
+    margin-left: 25%;
+    margin-top: -200px;
+  }
+  .contenedor__principal__vacio__texto{
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .contenedor__principal__vacio__alerta{
+    font-size: 13px;
+  }
+
+  .contenedor__principal__output {
+    position: static;
+    margin-left: 7%;
+    margin-top: -340px;
+    height: 330px;
+    width: 670px;
+  }
+
+  .boton_copiar{
+    position: static;
+    width: 624px;
+    margin-left: 10%;
+    margin-top: -100px;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .contenedor__principal__logo{
+    top: 24px;
+    left: -16px;
+  }
+
+  .contenedor__principal__input{
+    left: 25px;
+    width: 300px;
+  }
+
+  .contenedor__principal__hijo{
+    margin-left: 5%;
+    margin-top: 604px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .contenedor__principal__advertencia{
+    left: 25px;
+    top: 380px;
+  }
+
+  .contenedor__principal__botones{
+    flex-direction: column;
+    left: 25px;
+    top: 420px;
+  }
+
+  .contenedor__principal__botones button{
+    width: 300px;
+  }
+
+  .contenedor__principal__vacio{
+    margin-top: -170px;
+    margin-left: 0%;
+  }
+
+  .contenedor__principal__vacio__texto{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .contenedor__principal__vacio__alerta{
+    font-size: 10px;
+  }
+
+  .contenedor__principal__output{
+    margin-top: -300px;
+    width: 280px;
+    height: 180px;
+  }
+
+  .boton_copiar{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 280px;
+  }
+
+
+}
