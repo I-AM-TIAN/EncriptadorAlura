@@ -300,26 +300,27 @@ footer{
   }
 
   .contenedor__principal__input{
+    top: 90px;
     left: 50px;
     width: 300px;
   }
 
   .contenedor__principal__hijo{
     margin-left: 15%;
-    margin-top: 604px;
+    margin-top: 510px;
     width: 300px;
     height: 300px;
   }
 
   .contenedor__principal__advertencia{
     left: 50px;
-    top: 380px;
+    top: 300px;
   }
 
   .contenedor__principal__botones{
     flex-direction: column;
     left: 50px;
-    top: 420px;
+    top: 330px;
   }
 
   .contenedor__principal__botones button{

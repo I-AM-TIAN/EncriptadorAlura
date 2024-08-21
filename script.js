@@ -34,5 +34,24 @@ function desencriptar(){
 
 function copiarTexto(){
     let texto = document.getElementById("output").value;
-    navigator.clipboard.writeText(texto);
+
+            // Verifica si la API de Clipboard está disponible
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(texto)
+                    .then(() => {
+                        alert("Texto copiado al portapapeles");
+                    })
+                    .catch(err => {
+                        console.error("Error al copiar el texto: ", err);
+                    });
+            } else {
+                // Fallback para navegadores que no soportan navigator.clipboard
+                let textArea = document.createElement("textarea");
+                textArea.value = texto;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textArea);
+                alert("Texto copiado al portapapeles");
+            }
 }
